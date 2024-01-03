@@ -5,15 +5,15 @@ using namespace std;
 int solve(int inputIterator)
 {
     int x = 0;
-    string statement;
+    string st;
     for (int i = 0; i < inputIterator; i++)
     {
-        cin >> statement;
-        if (statement == "++X" || statement == "X++")
+        cin >> st;
+        if (st == "++X" || st == "X++")
         {
             x = x + 1;
         }
-        else if (statement == "--X" || statement == "X--")
+        else if (st == "--X" || st == "X--")
         {
             x = x - 1;
         }
